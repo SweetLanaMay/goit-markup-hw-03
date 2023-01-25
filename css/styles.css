@@ -82,13 +82,15 @@ outline-offset: -2px;
 /* Header styles */
 /* ---------------------------------------------- */
 
+.header {
+border: 1px solid #E7E9FC;
+}
 
 .header-container {
 display: flex;
 align-items: center;
-bottom: 1px solid #E7E9FC;
-
 }
+
 .header-nav {
 display: flex;
 align-items: center;
@@ -96,7 +98,6 @@ margin-right: auto;
 }
 
 .header-logo {
-margin-left: 156px;
 margin-right: 76px;
 
 }
@@ -106,7 +107,6 @@ margin-right: 76px;
 display: flex;
 gap: 40px;
 }
-
 
 .header-logo,
 .footer-logo {
@@ -164,16 +164,17 @@ color: var(--pressed-state);
 /* ---------------------------------------------- */
 
 .hero {
-text-align: center;
+padding: 188px 0px;
 
+text-align: center;
 background: var(--dark);
 }
 
 .hero-title {
-
-padding-top: 188px;
-padding-bottom: 48px;
-
+margin-bottom: 48px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
 
 font-size: 56px;
 line-height: calc(60 / 56);
@@ -186,9 +187,7 @@ color: var(--white);
 .btn {
 display: inline-block;
 min-width: 169px;
-min-height: 56px; 
-margin-bottom: 188px;
-
+min-height: 56px;
 
 border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -244,9 +243,11 @@ letter-spacing: 0.02em;
 /*  What are we doing styles*/
 /* ------------------------------------------ */
 
+.gallery {
+padding-top: 0; 
+}
 
 .section-title {
-
 margin-bottom: 72px;
 margin-left: auto;
 margin-right: auto;
@@ -283,7 +284,6 @@ gap: 24px;
 }
 
 .team-card {
-width: 232px;
 padding: 32px 16px;
 text-align: center;
 }
@@ -305,12 +305,11 @@ border-radius: 0px 0px 4px 4px;
 display: flex;
 justify-content: center;
 gap: 24px;
+margin-bottom: 72px;
 }
 
 .filters-btn {
 display: inline-block;
-margin-top: 96px;
-margin-bottom: 72px;
 padding: 12px 24px;
 
 font-family: inherit;
@@ -333,6 +332,9 @@ background-color: var(--pressed-state);
 /* ------------------------------------ */
 /*  Portfolio */
 /* ------------------------------------- */
+.portfolio {
+padding-top: 96px;
+}
 
 .portfolio-list {
 display: flex;
@@ -359,15 +361,19 @@ width: 360px;
 /* ------------------------------------ */
 
 .footer {
+margin: 0;
 background-color: var(--dark);
 }
-.footer-container {
-    width: 264px;
-    padding: 100px 0px;
-    margin-left: 156px;
+
+.footer-wrapper {
+width: 264px;
+padding: 100px 0;
+margin-left: 156px;
 }
+
 .footer-logo {
 margin-bottom: 16px;
+display: block;
 }
 
 .logo-light {
