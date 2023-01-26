@@ -361,15 +361,11 @@ width: 360px;
 /* ------------------------------------ */
 
 .footer {
-margin: 0;
+padding: 100px 0;
 background-color: var(--dark);
 }
 
-.footer-wrapper {
-width: 264px;
-padding: 100px 0;
-margin-left: 156px;
-}
+
 
 .footer-logo {
 margin-bottom: 16px;
@@ -379,7 +375,9 @@ display: block;
 .logo-light {
 color: var(--light);
 }
+
 .footer-text {
+width: 264px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--accent);
